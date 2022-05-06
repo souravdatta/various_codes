@@ -2,6 +2,7 @@
 FindUniqueNumbers ← {≢∪((⊢∊∘⎕D)⊆⊢)⍵}
 ForwardReplace ← {⍺ ⊣⍣(⍵=0)⊢ ⍵}\
 
+⎕IO ← 0
 Comp ← {</2↑⍵}
 CountIncreases ← {+/(Comp∘⊢↓∘⍵)¨(⍳≢⍵)}
 
