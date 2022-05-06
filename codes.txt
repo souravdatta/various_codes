@@ -1,0 +1,5 @@
+FindUniqueNumbers ← {≢∪((⊢∊∘⎕D)⊆⊢)⍵}
+
+def find_unique_numbers(s)
+  Set.new(s.scan(/\d+/)).count
+end
