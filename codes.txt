@@ -2,6 +2,10 @@
 FindUniqueNumbers ← {≢∪((⊢∊∘⎕D)⊆⊢)⍵}
 ForwardReplace ← {⍺ ⊣⍣(⍵=0)⊢ ⍵}\
 
+Comp ← {</2↑⍵}
+CountIncreases ← {+/(Comp∘⊢↓∘⍵)¨(⍳≢⍵)}
+
+
 def find_unique_numbers(s)
   Set.new(s.scan(/\d+/)).count
 end
